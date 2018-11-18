@@ -208,13 +208,13 @@
     <layout-folder>
         <layout>inicio.xml</layout>
         <layout>principal.xml</layout>
-        <layout>glosario.xml</layout>
+        <layout>herramientas.xml</layout>
         <layout>acerca.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Inicio.xml</event-sheet>
+        <event-sheet>inicio.xml</event-sheet>
         <event-sheet>principal.xml</event-sheet>
-        <event-sheet>glosario.xml</event-sheet>
+        <event-sheet>herramientas.xml</event-sheet>
         <event-sheet>acerca.xml</event-sheet>
     </event-folder>
     <global-instances>
@@ -234,5 +234,21 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="ayuda.html" />
+        <file name="estilos.css" />
+        <file name="glosario.html" />
+        <file name="h.png" />
+        <file name="h-1.png" />
+        <file name="h-2.png" />
+        <file name="h-3.png" />
+        <file name="h-4.png" />
+        <file name="he.png" />
+        <file name="m.png" />
+        <file name="m-1.png" />
+        <file name="p.png" />
+        <file name="t.png" />
+        <file name="t-1.png" />
+        <file name="v.png" />
+        <file name="directorio.html" />
     </files-folder>
 </c2project>

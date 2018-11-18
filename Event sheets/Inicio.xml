@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Inicio</name>
+    <name>inicio</name>
     <events>
         <variable constant="0" name="gVariable" sid="795916667570415" static="0" type="number">0</variable>
         <event-block sid="737088068251081">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="977637888054075" type="System" />
                 <condition id="-7" name="Compare instance variable" sid="372747110471725" type="zgui">
+                    <param id="0" name="Instance variable">ID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="643640792190927" type="zetiqueta">
                     <param id="0" name="Instance variable">ID</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
@@ -60,7 +65,14 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="0" name="Set text" sid="664443117038184" type="zetiqueta">
+                                    <param id="0" name="Text">&quot;Glosario&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="520976224093294" type="System">
+                                    <param id="0" name="Layout">herramientas</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <comment>Ayuda</comment>
                         <event-block sid="936400228130489">
@@ -72,7 +84,14 @@
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="0" name="Set text" sid="410962572835999" type="zetiqueta">
+                                    <param id="0" name="Text">&quot;Ayuda&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="505544303959194" type="System">
+                                    <param id="0" name="Layout">herramientas</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <comment>Acerca de</comment>
                         <event-block sid="637189521487810">
@@ -85,6 +104,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Set text" sid="384370568142884" type="zetiqueta">
+                                    <param id="0" name="Text">&quot;Acerca de la aplicación&quot;</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="902061097118189" type="System">
                                     <param id="0" name="Layout">acerca</param>
                                 </action>
@@ -100,11 +122,14 @@
                                     <param id="2" name="Value">4</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                        </event-block>
-                        <event-block sid="142090282403558">
-                            <conditions />
-                            <actions />
+                            <actions>
+                                <action id="0" name="Set text" sid="226989677912521" type="zetiqueta">
+                                    <param id="0" name="Text">&quot;Directorio de denuncia&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="118133942132891" type="System">
+                                    <param id="0" name="Layout">herramientas</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

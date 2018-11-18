@@ -2,7 +2,7 @@
 <c2layout>
     <name>inicio</name>
     <sid>849819444578153</sid>
-    <event-sheet>Inicio</event-sheet>
+    <event-sheet>inicio</event-sheet>
     <size>
         <width>860</width>
         <height>480</height>
@@ -11,7 +11,7 @@
         <horizontal>500</horizontal>
         <vertical>500</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
         <layer name="Fondo" sid="830869555379123">
             <initially-visible>1</initially-visible>
@@ -151,7 +151,7 @@
                 </instance>
                 <instance type="zetiqueta" uid="19">
                     <properties>
-                        <text>Comportamiento hacia terceros</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16,700,0</font>
                         <color>0,0,0</color>

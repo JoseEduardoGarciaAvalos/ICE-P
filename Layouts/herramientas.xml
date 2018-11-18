@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>glosario</name>
+    <name>herramientas</name>
     <sid>335694345689849</sid>
-    <event-sheet>glosario</event-sheet>
+    <event-sheet>herramientas</event-sheet>
     <size>
         <width>860</width>
         <height>480</height>
