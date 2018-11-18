@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Principal</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>77edp8kkdcyi</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="PlayLive" id="HTML_iFrame" version="2">HTML | iFrame</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_PatternGen" version="0.100000001">Gashapon</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Rex.Rainbow" id="rex_TagText" version="0.100000001">Tag Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Rex.Rainbow" id="Rex_pinOffsetXY" version="1">Pin offsetXY</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Avatar" sid="158664229278184">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="559093695395688" type="number" />
+                <instance-variable name="estado" sid="661412868953361" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Tarea" sid="819020028720884">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Tiempo" sid="274923127853979">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790779557999398" speed="0">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.506494" original-source="C:\Users\Android\Downloads\pupila.png" />
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.506494" original-source="C:\Users\Android\Downloads\orbita.png" />
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="C:\Users\Android\Downloads\boca.png" />
+                    <frame duration="1" hotspotX="0.904977" hotspotY="0.843931" original-source="C:\Users\Android\Downloads\pata d.png" />
+                    <frame duration="1" hotspotX="0.809211" hotspotY="0.179191" original-source="C:\Users\Android\Downloads\pata t.png" />
+                    <frame duration="1" hotspotX="0.0797872" hotspotY="0.931604" original-source="C:\Users\Android\Downloads\cola.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Android\Downloads\cuerpo.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="boca" pingpong="1" repeatcount="1" repeatto="0" sid="855690805410538" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="C:\Users\Android\Downloads\boca.png" />
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="652003077724946">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Teclado" sid="313641970120735">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Funcion" sid="989378252895539">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Navegador" sid="377536987270802">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type global="1" name="zetiqueta" sid="213416502748578">
+            <plugin id="rex_TagText" />
+            <instance-variables>
+                <instance-variable name="ID" sid="734131570413450" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="900038220859423">
+                    <behavior id="Rex_pinOffsetXY" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type global="1" name="zgui" sid="253711804637729">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="380336891859037" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Tarea" sid="215900902931156">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="888294215838452">
+                    <behavior id="Rex_pinOffsetXY" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="GUI" pingpong="0" repeatcount="1" repeatto="0" sid="896065074924316" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\pensamiento.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="G:\OneDrive\Personal\proyecto GUI\- RECURSOS v2\pergamino grande.png">
+                        <collision-poly>
+                            <point x="0.0291667" y="0.0467706" />
+                            <point x="0.5" y="0.00890869" />
+                            <point x="0.836111" y="0.262806" />
+                            <point x="0.815278" y="0.498886" />
+                            <point x="0.959722" y="0.935412" />
+                            <point x="0.5" y="0.98441" />
+                            <point x="0.156944" y="0.74833" />
+                            <point x="0.158333" y="0.498886" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Android\Downloads\acerca de.png">
+                        <collision-poly>
+                            <point x="0.103774" y="0.229167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.976415" y="0.0520833" />
+                            <point x="0.882075" y="0.739583" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0235849" y="0.947917" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.426724" hotspotY="0.974074" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\pensamiento.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.500785" hotspotY="0.5" original-source="C:\Users\Android\Downloads\titulo 4.png" />
+                    <frame duration="1" hotspotX="0.500626" hotspotY="0.505747" original-source="C:\Users\Android\Downloads\titulo 5.png" />
+                </animation>
+                <animation framecount="27" loop="0" name="letras" pingpong="0" repeatcount="1" repeatto="0" sid="789402152918646" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\Admiración.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\A.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\B.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\C.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\D.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\F.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\G.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\H.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\I.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\J.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\K.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\L.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\M.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\O.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\P.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\Q.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\R.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\T.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\U.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\V.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\X.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\Y.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEST\Z.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="zmosaico" sid="759573360688622">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="ID" sid="844954215184195" type="number" />
+            </instance-variables>
+            <texture original-source="H:\OneDrive\Tesis\APLICACIÓN\PROCESO\proyecto GUI\- TEMA CONSTRUCCIÓN\muro de ladrillos.png" />
+        </object-type>
+        <object-type global="1" name="Patron" sid="558720867502815">
+            <plugin id="Rex_PatternGen" />
+        </object-type>
+        <object-type name="IFrame" sid="824373792968910">
+            <plugin id="HTML_iFrame" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Actores" plugin-id="Sprite" sid="518820413692974">
+            <members>
+                <member>Avatar</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Pin" sid="318492862509375">
+                    <behavior id="Rex_pinOffsetXY" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>inicio.xml</layout>
+        <layout>principal.xml</layout>
+        <layout>glosario.xml</layout>
+        <layout>acerca.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Inicio.xml</event-sheet>
+        <event-sheet>principal.xml</event-sheet>
+        <event-sheet>glosario.xml</event-sheet>
+        <event-sheet>acerca.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="11" />
+        <global-instance type="Teclado" uid="12" />
+        <global-instance type="Funcion" uid="13" />
+        <global-instance type="Navegador" uid="14" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

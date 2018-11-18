@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Inicio</name>
+    <events>
+        <variable constant="0" name="gVariable" sid="795916667570415" static="0" type="number">0</variable>
+        <event-block sid="737088068251081">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="977637888054075" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="372747110471725" type="zgui">
+                    <param id="0" name="Instance variable">ID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="344245694822463">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="722304281362986" type="System">
+                            <param id="0" name="Variable">gVariable</param>
+                            <param id="1" name="Value">Navegador.QueryParam(&quot;p&quot;) &lt;&gt; &quot;&quot; ? Navegador.QueryParam(&quot;p&quot;): gVariable</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="299251569540373">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="423928721637131" type="System">
+                            <param id="0" name="Variable">gVariable</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="497302110734266" type="System">
+                            <param id="0" name="Layout">principal</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="705216890255628" type="zgui">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="295365720056806">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="231306974500179" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="424409977255255" type="zgui">
+                            <param id="0" name="Frame number">6</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>Glosario</comment>
+                        <event-block sid="447247804556610">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="336585704697433" type="System">
+                                    <param id="0" name="Variable">gVariable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <comment>Ayuda</comment>
+                        <event-block sid="936400228130489">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="644484698278733" type="System" />
+                                <condition id="-14" name="Compare variable" sid="810298771439114" type="System">
+                                    <param id="0" name="Variable">gVariable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <comment>Acerca de</comment>
+                        <event-block sid="637189521487810">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="958188751955338" type="System" />
+                                <condition id="-14" name="Compare variable" sid="124867377157029" type="System">
+                                    <param id="0" name="Variable">gVariable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="902061097118189" type="System">
+                                    <param id="0" name="Layout">acerca</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Directorio de denuncia</comment>
+                        <event-block sid="890554821731965">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="437021684177276" type="System" />
+                                <condition id="-14" name="Compare variable" sid="195665930088258" type="System">
+                                    <param id="0" name="Variable">gVariable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="142090282403558">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

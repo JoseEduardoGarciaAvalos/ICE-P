@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>principal</name>
+    <events>
+        <event-block sid="384960376937191">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="548608258924729" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="aux" sid="968893423014685" static="0" type="number">0</variable>
+                <comment>Ojos</comment>
+                <event-block sid="575949492279178">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="133242533427903" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="338520706443161" type="Avatar">
+                            <param id="0" name="Tweened property">3</param>
+                            <param id="1" name="Function">0</param>
+                            <param id="2" name="Target">&quot;Height&quot;</param>
+                            <param id="3" name="Duration">0.5</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="353842339183689" type="Avatar">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="698935979400270" type="System">
+                            <param id="0" name="Variable">aux</param>
+                            <param id="1" name="Value">random(4,9)</param>
+                        </action>
+                        <action behavior="Tiempo" id="0" name="Start timer" sid="887741966168480" type="Avatar">
+                            <param id="0" name="Duration">aux</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;parpadear&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Boca</comment>
+                <event-block sid="641453364530797">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="745759407418241" type="zetiqueta">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="832578117814413" type="zetiqueta">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="219396215527373">
+                            <conditions>
+                                <condition id="1" name="Define tag (class)" sid="828789432024258" type="zetiqueta">
+                                    <param id="0" name="Name">&quot;enfasis&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="549344116602699" type="zetiqueta">
+                                    <param id="0" name="Color">&quot;red&quot;</param>
+                                </action>
+                                <action id="50" name="Set font style" sid="468973676283122" type="zetiqueta">
+                                    <param id="0" name="Style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="167549743670079">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="726028808382209" type="zgui">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="461778002015021" type="zgui">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">0</param>
+                        </action>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="651120101518794" type="zgui">
+                            <param id="0" name="Tweened property">1</param>
+                            <param id="1" name="Function">0</param>
+                            <param id="2" name="Target">&quot;size&quot;</param>
+                            <param id="3" name="Duration">0.7</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="732951965379374" type="zgui">
+                            <param id="0" name="Target is">6</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-270</param>
+                        </action>
+                        <action id="0" name="Call function" sid="833728237985416" type="Funcion">
+                            <param id="0" name="Name">&quot;moverBoca&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Manos</comment>
+                <event-block sid="559641202759388">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="201420237916822" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="262150581183786" type="Avatar">
+                            <param id="0" name="Tweened property">4</param>
+                            <param id="1" name="Function">2</param>
+                            <param id="2" name="Target">&quot;angle&quot;</param>
+                            <param id="3" name="Duration">2</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="349179766949538" type="Avatar">
+                            <param id="0" name="Target is">2</param>
+                            <param id="1" name="Relativity">1</param>
+                            <param id="2" name="Value">120</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="588868687071476">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="105371891699842" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4.2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="496302892741585" type="Avatar">
+                            <param id="0" name="Tweened property">4</param>
+                            <param id="1" name="Function">2</param>
+                            <param id="2" name="Target">&quot;angle&quot;</param>
+                            <param id="3" name="Duration">2</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="534953047664706" type="Avatar">
+                            <param id="0" name="Target is">2</param>
+                            <param id="1" name="Relativity">1</param>
+                            <param id="2" name="Value">-120</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="401979676134504">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="177933000054881" type="Funcion">
+                            <param id="0" name="Name">&quot;moverMano&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Cola</comment>
+                <event-block sid="523232577663728">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="322454313841493" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="421081325553800" type="Avatar">
+                            <param id="0" name="Tweened property">4</param>
+                            <param id="1" name="Function">2</param>
+                            <param id="2" name="Target">&quot;angle&quot;</param>
+                            <param id="3" name="Duration">2</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="316472899613382" type="Avatar">
+                            <param id="0" name="Target is">2</param>
+                            <param id="1" name="Relativity">1</param>
+                            <param id="2" name="Value">40</param>
+                        </action>
+                        <action behavior="Tarea" id="10" name="Start" sid="182077965044211" type="Avatar">
+                            <param id="0" name="Start Mode">2</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Cuerpo</comment>
+                <event-block sid="734473088022790">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="159525608714939" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="738514920262441" type="zetiqueta">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="149394846106501" type="zgui">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="1" name="Pin to object" sid="912466606376622" type="Actores">
+                            <param id="0" name="Pin to">Avatar</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Pin to object" sid="720102522516290" type="zgui">
+                            <param id="0" name="Pin to">Avatar</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Pin to object" sid="415437816642077" type="zetiqueta">
+                            <param id="0" name="Pin to">Avatar</param>
+                        </action>
+                        <action behavior="Tarea" id="26" name="Create/Initialize tween" sid="400044401115986" type="Avatar">
+                            <param id="0" name="Tweened property">0</param>
+                            <param id="1" name="Function">0</param>
+                            <param id="2" name="Target">&quot;position&quot;</param>
+                            <param id="3" name="Duration">1.7</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="936820785199713" type="Avatar">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">1</param>
+                            <param id="2" name="Value">-630</param>
+                        </action>
+                        <action behavior="Tarea" id="3" name="Set target" sid="506852731249425" type="Avatar">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action behavior="Tarea" id="10" name="Start" sid="216061193622920" type="Avatar">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>EVENTOS DE LOS OJOS</comment>
+        <event-block sid="333014962533081">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="256181562200029" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="751818570482456">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="563023898832644" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="590129000433559" type="Avatar">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="205954712519201">
+            <conditions>
+                <condition behavior="Tiempo" id="0" name="On timer" sid="957969389388225" type="Avatar">
+                    <param id="0" name="Tag">&quot;parpadear&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="aux" sid="135675395568049" static="0" type="number">0</variable>
+                <event-block sid="238949169946186">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="831693791479469" type="System">
+                            <param id="0" name="Variable">aux</param>
+                            <param id="1" name="Value">random(5,15)</param>
+                        </action>
+                        <action behavior="Tiempo" id="0" name="Start timer" sid="210788508405472" type="Avatar">
+                            <param id="0" name="Duration">aux</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;parpadear&quot;</param>
+                        </action>
+                        <action behavior="Tarea" id="10" name="Start" sid="191629917746176" type="Avatar">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="618626675175929">
+            <conditions>
+                <condition behavior="Tarea" id="4" name="On tween end" sid="797030359958674" type="Avatar" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="268086206792360">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="595106375411638" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Tarea" id="11" name="Reverse" sid="816619161051337" type="Avatar">
+                            <param id="0" name="Reverse mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>EVENTOS DE LAS MANOS</comment>
+        <event-block sid="847369343134642">
+            <conditions>
+                <condition behavior="Tiempo" id="0" name="On timer" sid="102768362527428" type="Avatar">
+                    <param id="0" name="Tag">&quot;moverMano&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="794596764039226">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="207500508741318" type="Funcion">
+                            <param id="0" name="Name">&quot;moverMano&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="180668334853514">
+            <conditions>
+                <condition id="0" name="On function" sid="963418821282372" type="Funcion">
+                    <param id="0" name="Name">&quot;moverMano&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="aux" sid="383186828637078" static="0" type="number">0</variable>
+                <variable comment="0 = estan abajo, 1 = estan arriba" constant="0" name="estado1" sid="261382100648348" static="0" type="number">0</variable>
+                <variable constant="0" name="estado2" sid="327366279592648" static="0" type="number">0</variable>
+                <event-block sid="710781648074202">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="637903767945845" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="624914319714822" type="System">
+                            <param id="0" name="Variable">estado1</param>
+                            <param id="1" name="Value">Avatar.estado</param>
+                        </action>
+                        <action behavior="Tiempo" id="0" name="Start timer" sid="528938617348892" type="Avatar">
+                            <param id="0" name="Duration">random(4,12)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;moverMano&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="967318807443508">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="688462456767086" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4.2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="679894968124580" type="System">
+                            <param id="0" name="Variable">estado2</param>
+                            <param id="1" name="Value">Avatar.estado</param>
+                        </action>
+                        <action id="14" name="Log" sid="561411372605890" type="Navegador">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">estado1 &amp; &quot; &quot; &amp; estado2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283874543914469">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="211280580507204" type="System">
+                            <param id="0" name="Variable">estado1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">estado2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="145028496786250" type="System">
+                            <param id="0" name="Variable">aux</param>
+                            <param id="1" name="Value">choose(1,2,3)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="330583290875602">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="948944186680705" type="System">
+                                    <param id="0" name="Variable">aux</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="885112991126638" type="Avatar">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">choose(4.1,4.2)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="769760488154939">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="201325555166534" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="10" name="Start" sid="697381868061743" type="Avatar">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="829754464594174" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="123446828423092">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="325573541651928" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="640679770774490" type="Avatar">
+                                            <param id="0" name="Reverse mode">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="962758004326455" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="696954157229114">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="404289711148128" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="275359694102739" type="Avatar">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="172008549424024" type="Avatar">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="787669018387301">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="845061754472651" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="10" name="Start" sid="467521336019869" type="Avatar">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="222362651724240" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="170229356074526">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="971107039004307" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="686795377039552" type="Avatar">
+                                            <param id="0" name="Reverse mode">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="694385732112624" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="596848438052398">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="237254281972106" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="154030106808714">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="931203666824950" type="Avatar">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">choose(4.1,4.2)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="536795272461715">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="852587954004925" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="10" name="Start" sid="668880109101667" type="Avatar">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="472467191483565" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="502530536151265">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="644632384780722" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="855587296617397" type="Avatar">
+                                            <param id="0" name="Reverse mode">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="473476239784306" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>EVENTOS DE LA BOCA</comment>
+        <event-block sid="638413989251072">
+            <conditions>
+                <condition id="0" name="On function" sid="747188909551828" type="Funcion">
+                    <param id="0" name="Name">&quot;moverBoca&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="Dialogos" sid="454913204839745" static="0" type="text">Pon a prueba tus conocimientos a través de los &lt;class=&apos;enfasis&apos;&gt;Test&lt;/class&gt;;</variable>
+                <event-block sid="376995347559471">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="501652038895649" type="zetiqueta">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="479744287619381" type="Avatar">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="548789932061573" type="zgui">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="650127262164062">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="983918297370086" type="Avatar">
+                                    <param id="0" name="Instance variable">estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="538432718339490">
+                                    <conditions />
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="536330285145849">
+                                            <conditions />
+                                            <actions>
+                                                <action id="2" name="Set pattern" sid="462407021932008" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Pon a prueba tus conocimientos a través de los &lt;class=&apos;enfasis&apos;&gt;Test&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="429891230995451" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;¡Vamos!, saca una puntuación perfecta en los &lt;class=&apos;enfasis&apos;&gt;Test&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="137339810745699" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Diviértete con los &lt;class=&apos;enfasis&apos;&gt;Minijuegos&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="990809609787191" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Ganas más puntos en los &lt;class=&apos;enfasis&apos;&gt;Minijuegos&lt;/class&gt; si contestas correctamente las preguntas &quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="954962398331934" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Elige el final correcto de las &lt;class=&apos;enfasis&apos;&gt;Historietas&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="238921048488831" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;¡Lee las &lt;class=&apos;enfasis&apos;&gt;Historietas&lt;/class&gt;!&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="776357663724707" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Disfruta de los &lt;class=&apos;enfasis&apos;&gt;Videos&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                                <action id="2" name="Set pattern" sid="248013961852695" type="Patron">
+                                                    <param id="0" name="Pattern">&quot;Aprende con los &lt;class=&apos;enfasis&apos;&gt;Videos&lt;/class&gt;&quot;</param>
+                                                    <param id="1" name="Count">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="889779626878782">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="292946637995372" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="112445495302622" type="Avatar">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action behavior="Tarea" id="10" name="Start" sid="944798862093207" type="zgui">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="491086346208727" type="zetiqueta">
+                                            <param id="0" name="Text">&quot;Hola&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="277627017587334" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="141890630345267" type="Avatar" />
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="959870009441621" type="zgui">
+                                            <param id="0" name="Reverse mode">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="909645740902647" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action behavior="Tarea" id="10" name="Start" sid="767256457455408" type="zgui">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="837264852232207" type="zetiqueta">
+                                            <param id="0" name="Text">&quot;Soy el ratón anti-ciberbullying&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="610761130372715" type="System">
+                                            <param id="0" name="Seconds">4</param>
+                                        </action>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="423736052878072" type="zgui">
+                                            <param id="0" name="Reverse mode">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="963188503120989" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action behavior="Tarea" id="10" name="Start" sid="361049604694119" type="zgui">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="456913040131118" type="zetiqueta">
+                                            <param id="0" name="Text">&quot;Te invito a que aprendas por medio de &lt;class=&apos;enfasis&apos;&gt;Videos, Historietas y Minijuegos&lt;/class&gt;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="386927236332270" type="System">
+                                            <param id="0" name="Seconds">6</param>
+                                        </action>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="278890947444049" type="zgui">
+                                            <param id="0" name="Reverse mode">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="864819694469790" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action behavior="Tarea" id="10" name="Start" sid="369014936212779" type="zgui">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="438618627738095" type="zetiqueta">
+                                            <param id="0" name="Text">&quot;Sobre temas de Ciberbullying y Conductas Lesivas en el Internet&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="577728519498125" type="System">
+                                            <param id="0" name="Seconds">5</param>
+                                        </action>
+                                        <action behavior="Tarea" id="11" name="Reverse" sid="947193270131763" type="zgui">
+                                            <param id="0" name="Reverse mode">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="632104940261766" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="337178671580497" type="Avatar">
+                                            <param id="0" name="Instance variable">estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="376706732351853" type="Avatar" />
+                                        <action behavior="Tiempo" id="0" name="Start timer" sid="774261610482655" type="Avatar">
+                                            <param id="0" name="Duration">random(4,12)</param>
+                                            <param id="1" name="Type">0</param>
+                                            <param id="2" name="Tag">&quot;moverBoca&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="624105328266532">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="347952728425848" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Start" sid="150138238272897" type="Avatar">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action behavior="Tarea" id="10" name="Start" sid="499095290715371" type="zgui">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="930184749736673" type="zetiqueta">
+                                    <param id="0" name="Text">Patron.Pattern</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="579767905528690" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action behavior="Tarea" id="11" name="Reverse" sid="594137044283860" type="zgui">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="370263819749081" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="2" name="Stop" sid="147504669265051" type="Avatar" />
+                                <action behavior="Tiempo" id="0" name="Start timer" sid="505548850220325" type="Avatar">
+                                    <param id="0" name="Duration">random(4,12)</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;moverBoca&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="723572850721869">
+            <conditions>
+                <condition behavior="Tiempo" id="0" name="On timer" sid="707346285149672" type="Avatar">
+                    <param id="0" name="Tag">&quot;moverBoca&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="963692347049962">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="469249582467053" type="Funcion">
+                            <param id="0" name="Name">&quot;moverBoca&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="285983760820410">
+            <conditions>
+                <condition behavior="Tarea" id="7" name="Is reversing" sid="423928460965286" type="zgui" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="976214922891396">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="401259631414018" type="zetiqueta">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="860897174670232" type="zetiqueta">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="702412639597435">
+            <conditions>
+                <condition behavior="Tarea" id="4" name="On tween end" sid="470899195516724" type="zgui" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="255342289528059">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="167402174847970" type="zetiqueta">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="144417449000416" type="zetiqueta">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
